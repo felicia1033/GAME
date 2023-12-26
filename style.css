@@ -1,0 +1,46 @@
+#score { text-align: center; }
+
+#game {
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url("./背景.jpg");
+  background-size: cover;
+}
+
+#dino {
+  height: 100px;
+  width: 100px;
+  top: 250px;
+  position: relative;
+  background-image: url("./貓.png");
+  background-size: cover;
+}
+
+#rock {
+  width: 75px;
+  height: 100px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url("./行人.png");
+  background-size: cover;
+  animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+  0%{left: 550px;}
+  100%{left: -50px;}
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 225px;}
+}
